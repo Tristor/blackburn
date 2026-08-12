@@ -11,7 +11,7 @@
   {{ with $.Param "author" }}
   <div>
     <i class="fa fa-address-card fa-fw"></i>
-    <a rel="author" class="p-author h-card" href="{{ with .Params.authorcard }}{{ . }}{{ else }}{{ $baseUrl }}/about/{{ end }}">{{ . }}</a>
+    <a rel="author" class="p-author h-card" href="{{ with $.Params.authorcard }}{{ . }}{{ else }}{{ $baseUrl }}/about/{{ end }}">{{ . }}</a>
   </div>
   {{ end }}  
 
